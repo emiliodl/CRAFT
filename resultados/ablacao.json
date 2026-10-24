@@ -1,0 +1,28 @@
+[
+ {
+  "aparelho": "fridge",
+  "braco": "3v_porta",
+  "semente": 0,
+  "vistas": "base+z+arcsinh",
+  "fusao": "porta",
+  "f1": 0.85082791790579,
+  "f1_oraculo": 0.8534641324340896,
+  "ap": 0.9308165876208138,
+  "auc": 0.9460291451046506,
+  "prevalencia": 0.44553378224372864,
+  "limiar": 0.3892811197052434,
+  "f1_val": 0.8361553730841406,
+  "ap_val": 0.9219353213916619,
+  "f1_val_limiar": 0.8361553730841406,
+  "melhor_epoca": 11,
+  "epocas": 15,
+  "parametros": 1105063,
+  "pesos_vistas": [
+   0.24500000476837158,
+   0.20000000298023224,
+   0.5550000071525574
+  ],
+  "segundos": 21.5,
+  "l_consistencia_final": null
+ }
+]

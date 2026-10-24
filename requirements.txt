@@ -1,0 +1,17 @@
+# Python 3.11 (the reported runs used Python 3.11.9 on Windows with CUDA 12.6).
+# Install PyTorch first with the build that matches your GPU/CUDA, see https://pytorch.org
+torch>=2.13.0
+numpy>=2.4.4
+pandas>=2.3.3
+scipy>=1.16.3
+scikit-learn>=1.7.2
+matplotlib>=3.10.8
+# reading REFIT MetaData_Tables.xlsx through pandas
+openpyxl>=3.1.5
+# reading UK-DALE / REDD HDF5 files (NILMTK format) through pandas.HDFStore
+tables>=3.11.1
+pytest>=9.1.1
+
+# Optional, only for the exploratory TimesFM probes (src/timesfm_sonda.py,
+# src/experimento_timesfm.py, src/experimento_conjunto.py); not needed for CRAFT.
+# timesfm>=3.0.2

@@ -1,0 +1,53 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.venv/
+venv/
+.ipynb_checkpoints/
+
+# Raw data and heavy artifacts (download the datasets separately; see README)
+datasets/
+logs/
+resultados/v2/
+resultados/v3/*
+!resultados/v3/preregistro_craftE.json
+!resultados/v3/preregistro_craftE15.json
+!resultados/v3/preregistro_ukdale_s.json
+!resultados/v3/final_craftE__celulas.csv
+!resultados/v3/final_craftE15__celulas.csv
+!resultados/v3/comparacao_5x15__celulas.csv
+!resultados/v3/final_ukdale_s__celulas.csv
+*.pickle
+*.pkl
+*.h5
+*.npz
+*.npy
+*.pt
+*.pth
+*.parquet
+
+# Manuscripts and thesis (LaTeX sources are not distributed)
+*.tex
+*.bib
+*.pdf
+*.aux
+*.log
+*.out
+*.synctex.gz
+cap*/
+artigo/*
+!artigo/figuras/
+artigo/figuras/*
+!artigo/figuras/*.png
+!artigo/figuras/gerar_*.py
+
+# Third-party material
+skillz-scientific-writing/
+
+# Editor / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

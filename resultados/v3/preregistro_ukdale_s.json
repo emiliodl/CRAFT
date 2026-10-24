@@ -1,0 +1,35 @@
+{
+ "data": "2026-09-30 13:41",
+ "versao": "CRAFT nos cenarios UK-DALE S4 e S5 do artigo",
+ "status": "gravado antes de qualquer rodada que olhe o teste destes cenarios",
+ "modelo": "CRAFT (nome interno CRAFT+E): media dos logits de G5, G7, G9, G15, G25 (experimento_reco.py, gerador R0-R4, so BCE) + A2 do v2 (experimento_evicon.py); configuracao identica a do fechamento REFIT/ECO (preregistro_craftE.json), 10 sementes",
+ "aparelhos": [
+  "fridge",
+  "dishwasher",
+  "washing machine"
+ ],
+ "limiares_W": {
+  "fridge": 50,
+  "dishwasher": 10,
+  "washing machine": 20
+ },
+ "treino": "UK-DALE casa 1, 2013-03-01 a 2014-03-01 (grade fina: casa 301 em src/reco.py; 5 min: ukdale_casa_1__<ap>__5min__treino.npz); val/holdout = 4 ultimas semanas (regra d_A)",
+ "cenarios": {
+  "S4_intra": "teste UK-DALE casa 1, 2014-03-01 a 2014-04-01; regra primaria d_A",
+  "S5_cross_house": "teste UK-DALE casa 2, gravacao inteira (120 dias validos); regra primaria d_L (calibrada nas REFIT 3, 7, 20)"
+ },
+ "declaracoes": [
+  "UK-DALE casa 1 nao tem maquina de lavar; o washer dryer (medidor 5) e usado como alvo 'washing machine' nestes cenarios",
+  "geladeira: casa 1 = fridge freezer (medidor 12), casa 2 = fridge (medidor 14)",
+  "a maquina de lavar da UK-DALE casa 2 ja foi alvo de teste no v3.1 (modelo treinado no REFIT); a casa 1 ja foi alvo da TV; geladeira e lava-louca nunca foram olhadas",
+  "sem numero publicado de referencia para estes cenarios: relatar F1 da classe ligado e prevalencia",
+  "agregado do UK-DALE em potencia aparente, plugues em ativa (sem conversao)"
+ ],
+ "metrica": "F1 da classe ligado por aparelho e cenario, contagens somadas de todo o teste, media de 10 sementes; IC por bootstrap de dias x sementes",
+ "olhadas_no_teste_antes": 26,
+ "rodadas": [
+  "experimento_reco.py --modelos G5,G7,G9,G15,G25 --fonte A --fonte_fina 301 --sementes 10 --lotes_epoca 400 --passo 4 --olhar_teste --testes S4/S5 (um processo por aparelho, dividido em G5-G9 e G15-G25 com --continuacao)",
+  "experimento_evicon.py --modelos A2 --fonte A --fonte_ds ukdale --fonte_casa 1 --sementes 10 --epocas 40 --paciencia 6 --passo 4 --olhar_teste --testes S4/S5"
+ ],
+ "hash": "bfe8b6547f069710"
+}

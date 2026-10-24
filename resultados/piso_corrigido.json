@@ -1,0 +1,44 @@
+[
+ {
+  "f1": 0.6431663574520717,
+  "f1_oraculo": 0.6726157278304516,
+  "ap": 0.7100262786028391,
+  "auc": 0.9704074753944261,
+  "prevalencia": 0.03393151983618736,
+  "limiar": 0.1998788173154422,
+  "parametros": 5,
+  "aparelho": "dish washer",
+  "braco": "piso",
+  "semente": 0,
+  "epocas": 0,
+  "segundos": 0.0
+ },
+ {
+  "f1": 0.783205779271869,
+  "f1_oraculo": 0.8004725649776844,
+  "ap": 0.7217716916581718,
+  "auc": 0.8543894420600343,
+  "prevalencia": 0.44553378224372864,
+  "limiar": 0.3910165548820748,
+  "parametros": 5,
+  "aparelho": "fridge",
+  "braco": "piso",
+  "semente": 0,
+  "epocas": 0,
+  "segundos": 0.0
+ },
+ {
+  "f1": 0.14724803431022157,
+  "f1_oraculo": 0.17784711388455537,
+  "ap": 0.1080090108323652,
+  "auc": 0.8728001756924995,
+  "prevalencia": 0.015694444999098778,
+  "limiar": 0.21814104599729212,
+  "parametros": 5,
+  "aparelho": "washing machine",
+  "braco": "piso",
+  "semente": 0,
+  "epocas": 0,
+  "segundos": 0.0
+ }
+]

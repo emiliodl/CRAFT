@@ -1,0 +1,115 @@
+{
+ "data": "2026-09-29",
+ "versao": "fechamento unificado CRAFT+E (pos-v3.1, sem UK-DALE)",
+ "status": "APROVADO pelo usuario em 2026-09-29 15:12, antes de qualquer rodada de teste; hash do rascunho 6841e05124e48277",
+ "sementes": 10,
+ "modelo": "CRAFT+E = media dos logits de 6 membros com peso igual: 5 ResNets 1D do CRAFT (kernels 5,7,9,15,25; gerador R0-R4; so BCE; config de reco.py no estado de 2026-09-29) + o ramo so-evidencia A2 do v2 (src/evicon.py). Um treino por aparelho e faixa serve as celulas cross e intra.",
+ "decisoes_na_validacao": {
+  "E_como_6o_membro": "resultados/v3/validacao_craftE__resumo.csv: CRAFT+E >= CRAFT em AUC e F1 d_L nas casas 3/7/20 nas 6 combinacoes aparelho x faixa (TV A 0,779/0,612 x 0,777/0,606; m. lavar A 0,873/0,423 x 0,867/0,420; freezer A 0,676/0,701 x 0,670/0,700; TV A+ 0,772/0,581 x 0,770/0,578; m. lavar A+ 0,916/0,506 x 0,911/0,496; freezer A+ 0,733/0,727 x 0,726/0,724); no holdout da casa 8 (proxy do intra) empata (TV AUC 0,894 x 0,892; m. lavar 0,995 x 0,995; freezer 0,845 x 0,845)",
+  "sem_variante_intra": "TV intra: 12 h e hora do dia ja reprovados no F3 do v3; um 7o membro so com janelas reais (A0_4hcf) nao muda o holdout da casa 8 (AUC 0,895 x 0,894). Nenhuma variante propria do intra",
+  "freezer": "craft_fz2: sem distrator (a geladeira confunde mais do que ensina) e fundo = A - P em qualquer janela (FUNDO_LIMPO=False); AUC A 0,552 -> 0,671 na validacao",
+  "sem_ukdale": "fontes so REFIT; TV A+ = {8, 15} (escolha do E2.3 do v3; empata com {8, 15, UK-DALE 5} na validacao do v3.1)"
+ },
+ "regra_primaria": {
+  "cross": "d_L",
+  "intra": "d_A"
+ },
+ "regras_secundarias": [
+  "q (transdutiva)",
+  "d_A no cross (faixa A)",
+  "d_L no intra",
+  "CRAFT sem o E"
+ ],
+ "familia_primaria": [
+  "A+|television|cross",
+  "A+|washing machine|cross",
+  "A+|freezer|cross",
+  "A|television|intra",
+  "A|washing machine|intra",
+  "A|freezer|intra"
+ ],
+ "familia_secundaria": "faixa A cross (TV, m. lavar, freezer), com Holm proprio; todo o resto e descritivo",
+ "criterio": "supera = limite inferior do IC95% (bootstrap de dias ao meio-dia x sementes, 2000 replicas) acima do artigo e p_Holm < 0,05 na familia primaria; vence o trivial = IC de F1 - F1(tudo positivo) exclui zero",
+ "expectativa_declarada": "TV e m. lavar cross A+ superam; freezer cross e intra: artigo abaixo do trivial, vitoria depende de vencer o trivial com IC; TV intra provavel empate (oraculo do C0 no teste do v3 foi 0,682); m. lavar intra IC acima do artigo mas com 16 ativacoes, Holm pode nao passar; m. lavar cross A inconclusivo (oraculo do CRAFT no teste 0,316 x 0,30)",
+ "execucoes": {
+  "A": {
+   "television": {
+    "tags_craft": [
+     "craftF_A"
+    ],
+    "tag_e": "craftE_A_ev",
+    "celulas": [
+     "cross",
+     "intra"
+    ]
+   },
+   "washing machine": {
+    "tags_craft": [
+     "craftF_A"
+    ],
+    "tag_e": "final_A",
+    "celulas": [
+     "cross",
+     "intra"
+    ]
+   },
+   "freezer": {
+    "tags_craft": [
+     "craftE_A_fz"
+    ],
+    "tag_e": "craftE_A_ev",
+    "celulas": [
+     "cross",
+     "intra"
+    ]
+   }
+  },
+  "A+": {
+   "television": {
+    "tags_craft": [
+     "craftE_Amais_tv"
+    ],
+    "tag_e": "craftE_Amais_ev",
+    "celulas": [
+     "cross"
+    ],
+    "fontes": [
+     8,
+     15
+    ]
+   },
+   "washing machine": {
+    "tags_craft": [
+     "craftF_Amais"
+    ],
+    "tag_e": "craftE_Amais_ev",
+    "celulas": [
+     "cross"
+    ]
+   },
+   "freezer": {
+    "tags_craft": [
+     "craftE_Amais_fz"
+    ],
+    "tag_e": "craftE_Amais_ev",
+    "celulas": [
+     "cross"
+    ]
+   }
+  }
+ },
+ "reuso_de_predicoes_ja_olhadas": "craftF_A (TV e m. lavar, faixa A) e craftF_Amais (m. lavar A+) foram treinados e olhados em 2026-09-27; final_A (A2 da m. lavar, faixa A) em 2026-09-25. Sao reutilizados sem retreino; a combinacao com o E e nova",
+ "rodadas_novas": [
+  "python src/experimento_evicon.py --aparelhos television,freezer --modelos A2 --fonte A --casas_extra auto --sementes 10 --epocas 40 --paciencia 6 --passo 4 --olhar_teste --tag craftE_A_ev",
+  "python src/experimento_evicon.py --aparelhos television,washing machine,freezer --modelos A2 --fonte A+ --casas_extra auto --n_extra 99 --sementes 10 --epocas 40 --paciencia 6 --passo 8 --olhar_teste --tag craftE_Amais_ev",
+  "python src/experimento_reco.py --aparelhos freezer --modelos G5,G7,G9,G15,G25 --fonte A --sementes 10 --lotes_epoca 400 --passo 4 --olhar_teste --tag craftE_A_fz",
+  "python src/experimento_reco.py --aparelhos freezer --modelos G5,G7,G9,G15,G25 --fonte A+ --sementes 10 --lotes_epoca 400 --passo 8 --olhar_teste --tag craftE_Amais_fz",
+  "python src/experimento_reco.py --aparelhos television --modelos G5,G7,G9,G15,G25 --fonte A+ --casas_extra 15 --sementes 10 --lotes_epoca 400 --passo 8 --olhar_teste --tag craftE_Amais_tv",
+  "python src/final_craftE.py --preregistro resultados/v3/preregistro_craftE.json"
+ ],
+ "olhadas_no_teste_antes": 17,
+ "olhadas_previstas": "8 linhas automaticas em olhadas.csv (uma por aparelho x rodada) + 1 da analise final = 26 no total do projeto; todas numa unica rodada de fechamento, sem nova rodada depois dela qualquer que seja o resultado",
+ "aviso": "o ECO e o mes de teste da casa 8 ja foram olhados 17 vezes; este fechamento e o ultimo antes do artigo",
+ "execucao": "rodadas de treino em paralelo na GPU; o CRAFT de cada aparelho x faixa pode ser dividido em processos por membro (--continuacao na 2a parte, sem nova olhada), como no v3.1",
+ "hash": "2def81803f358a29"
+}

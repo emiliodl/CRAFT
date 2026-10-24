@@ -1,0 +1,22 @@
+fonte,aparelho,particao,d_agregado_5min,n,d_agregado_5min_sem_lacuna,n_sem_lacuna,intervalos_em_lacuna
+refit 2,washing machine,treino,245.6,276,245.6,276,0.0
+refit 2,television,treino,175.0,913,175.0,913,0.0
+refit 5,washing machine,treino,788.8,751,788.8,751,0.0
+refit 5,television,treino,88.3,582,88.3,582,0.0
+refit 6,freezer,treino,26.7,13710,26.7,13710,0.0
+refit 6,washing machine,treino,159.3,149,159.3,149,0.0
+refit 6,television,treino,-155.5,64,-155.5,64,0.0
+refit 9,washing machine,treino,654.8,185,654.8,185,0.0
+refit 9,television,treino,185.3,128,185.3,128,0.0
+refit 10,washing machine,treino,399.4,431,399.4,431,0.0
+refit 10,television,treino,,0,,0,0.0
+refit 11,washing machine,treino,343.1,120,343.1,120,0.0
+refit 12,television,treino,,0,,0,0.0
+refit 15,washing machine,treino,414.2,254,414.2,254,0.0
+refit 15,television,treino,125.8,562,125.8,562,0.0
+refit 16,washing machine,treino,1096.2,268,1096.2,268,0.0
+refit 16,television,treino,61.5,1951,61.5,1951,0.0
+refit 19,washing machine,treino,216.1,234,216.1,234,0.0
+refit 19,television,treino,43.5,1065,43.5,1065,0.0
+refit 21,washing machine,treino,247.9,237,247.9,237,0.0
+refit 21,television,treino,85.4,646,85.4,646,0.0

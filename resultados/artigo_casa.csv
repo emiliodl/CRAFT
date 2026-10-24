@@ -1,0 +1,241 @@
+aparelho,taxa,rotulo,alvo,vista,prevalencia,limiar,epocas,segundos,modelo,f1,f1_oraculo,auc
+freezer,5min,media,intra: refit casa 8,casa,0.3314,0.259,95,11.1,rede,0.5295427299195068,0.5420819490586932,0.668420960924502
+freezer,5min,media,intra: refit casa 8,casa,0.3314,0.259,95,11.1,rede+morf,0.5295427299195068,,
+freezer,5min,media,intra: refit casa 8,casa,0.3314,0.259,95,11.1,piso,0.49482401656314695,0.5247787610619469,
+freezer,5min,media,intra: refit casa 8,casa,0.3314,0.259,95,11.1,tudo_ligado,0.49786630058542125,,
+freezer,5min,media,cross: eco casa 1,casa,0.6125,0.259,95,11.1,rede,0.7785923753665689,0.7956032891424736,0.7465296132820409
+freezer,5min,media,cross: eco casa 1,casa,0.6125,0.259,95,11.1,rede+morf,0.7785923753665689,,
+freezer,5min,media,cross: eco casa 1,casa,0.6125,0.259,95,11.1,piso,0.2151084010840108,0.8072819644369179,
+freezer,5min,media,cross: eco casa 1,casa,0.6125,0.259,95,11.1,tudo_ligado,0.7596708590168613,,
+freezer,5min,media,cross: eco casa 2,casa,0.692,0.259,95,11.1,rede,0.7453703703703703,0.8225114520468263,0.5992461417376724
+freezer,5min,media,cross: eco casa 2,casa,0.692,0.259,95,11.1,rede+morf,0.7453703703703703,,
+freezer,5min,media,cross: eco casa 2,casa,0.692,0.259,95,11.1,piso,0.00034897923573547375,0.8602735467827168,
+freezer,5min,media,cross: eco casa 2,casa,0.692,0.259,95,11.1,tudo_ligado,0.8179871616895528,,
+freezer,5min,media,intra: refit casa 8,casa,0.3314,0.2046,116,11.6,rede,0.5252066785540607,0.5350337144532394,0.6543188767480551
+freezer,5min,media,intra: refit casa 8,casa,0.3314,0.2046,116,11.6,rede+morf,0.5252066785540607,,
+freezer,5min,media,intra: refit casa 8,casa,0.3314,0.2046,116,11.6,piso,0.49482401656314695,0.5247787610619469,
+freezer,5min,media,intra: refit casa 8,casa,0.3314,0.2046,116,11.6,tudo_ligado,0.49786630058542125,,
+freezer,5min,media,cross: eco casa 1,casa,0.6125,0.2046,116,11.6,rede,0.7587625011683335,0.7903991999333277,0.7224707511642032
+freezer,5min,media,cross: eco casa 1,casa,0.6125,0.2046,116,11.6,rede+morf,0.7587625011683335,,
+freezer,5min,media,cross: eco casa 1,casa,0.6125,0.2046,116,11.6,piso,0.2151084010840108,0.8072819644369179,
+freezer,5min,media,cross: eco casa 1,casa,0.6125,0.2046,116,11.6,tudo_ligado,0.7596708590168613,,
+freezer,5min,media,cross: eco casa 2,casa,0.692,0.2046,116,11.6,rede,0.7103201634877383,0.8177987286622384,0.49668446086986273
+freezer,5min,media,cross: eco casa 2,casa,0.692,0.2046,116,11.6,rede+morf,0.7103201634877383,,
+freezer,5min,media,cross: eco casa 2,casa,0.692,0.2046,116,11.6,piso,0.00034897923573547375,0.8602735467827168,
+freezer,5min,media,cross: eco casa 2,casa,0.692,0.2046,116,11.6,tudo_ligado,0.8179871616895528,,
+freezer,5min,media,intra: refit casa 8,casa,0.3314,0.1989,97,9.5,rede,0.5186467348544453,0.5311771561771562,0.6386278047574081
+freezer,5min,media,intra: refit casa 8,casa,0.3314,0.1989,97,9.5,rede+morf,0.5161084529505582,,
+freezer,5min,media,intra: refit casa 8,casa,0.3314,0.1989,97,9.5,piso,0.49482401656314695,0.5247787610619469,
+freezer,5min,media,intra: refit casa 8,casa,0.3314,0.1989,97,9.5,tudo_ligado,0.49786630058542125,,
+freezer,5min,media,cross: eco casa 1,casa,0.6125,0.1989,97,9.5,rede,0.7761037140854941,0.7900766504574301,0.7053851872848754
+freezer,5min,media,cross: eco casa 1,casa,0.6125,0.1989,97,9.5,rede+morf,0.7748396731968725,,
+freezer,5min,media,cross: eco casa 1,casa,0.6125,0.1989,97,9.5,piso,0.2151084010840108,0.8072819644369179,
+freezer,5min,media,cross: eco casa 1,casa,0.6125,0.1989,97,9.5,tudo_ligado,0.7596708590168613,,
+freezer,5min,media,cross: eco casa 2,casa,0.692,0.1989,97,9.5,rede,0.7658273670662052,0.81851296335976,0.5321030352804298
+freezer,5min,media,cross: eco casa 2,casa,0.692,0.1989,97,9.5,rede+morf,0.7624434389140272,,
+freezer,5min,media,cross: eco casa 2,casa,0.692,0.1989,97,9.5,piso,0.00034897923573547375,0.8602735467827168,
+freezer,5min,media,cross: eco casa 2,casa,0.692,0.1989,97,9.5,tudo_ligado,0.8179871616895528,,
+freezer,5min,nativo,intra: refit casa 8,casa,0.2817,0.2166,105,10.6,rede,0.46812709690151966,0.4868948504471169,0.6616640415779584
+freezer,5min,nativo,intra: refit casa 8,casa,0.2817,0.2166,105,10.6,rede+morf,0.46812709690151966,,
+freezer,5min,nativo,intra: refit casa 8,casa,0.2817,0.2166,105,10.6,piso,0.4442655935613682,0.47487321346242506,
+freezer,5min,nativo,intra: refit casa 8,casa,0.2817,0.2166,105,10.6,tudo_ligado,0.4396010519466556,,
+freezer,5min,nativo,cross: eco casa 1,casa,0.5546,0.2166,105,10.6,rede,0.7306828172316108,0.7433473389355744,0.7249434491675
+freezer,5min,nativo,cross: eco casa 1,casa,0.5546,0.2166,105,10.6,rede+morf,0.7306828172316108,,
+freezer,5min,nativo,cross: eco casa 1,casa,0.5546,0.2166,105,10.6,piso,0.22530076558512574,0.7769668921324314,
+freezer,5min,nativo,cross: eco casa 1,casa,0.5546,0.2166,105,10.6,tudo_ligado,0.7134651958934326,,
+freezer,5min,nativo,cross: eco casa 2,casa,0.5726,0.2166,105,10.6,rede,0.6493675595238094,0.7284045496464802,0.524417615768942
+freezer,5min,nativo,cross: eco casa 2,casa,0.5726,0.2166,105,10.6,rede+morf,0.6493675595238094,,
+freezer,5min,nativo,cross: eco casa 2,casa,0.5726,0.2166,105,10.6,piso,0.00042176296921130323,0.803450729277837,
+freezer,5min,nativo,cross: eco casa 2,casa,0.5726,0.2166,105,10.6,tudo_ligado,0.7282083018949165,,
+freezer,5min,nativo,intra: refit casa 8,casa,0.2817,0.1916,128,12.5,rede,0.4733169903828021,0.484748309541698,0.6559172823161346
+freezer,5min,nativo,intra: refit casa 8,casa,0.2817,0.1916,128,12.5,rede+morf,0.4733169903828021,,
+freezer,5min,nativo,intra: refit casa 8,casa,0.2817,0.1916,128,12.5,piso,0.4442655935613682,0.47487321346242506,
+freezer,5min,nativo,intra: refit casa 8,casa,0.2817,0.1916,128,12.5,tudo_ligado,0.4396010519466556,,
+freezer,5min,nativo,cross: eco casa 1,casa,0.5546,0.1916,128,12.5,rede,0.7013594829507466,0.7538311630791037,0.734503521789626
+freezer,5min,nativo,cross: eco casa 1,casa,0.5546,0.1916,128,12.5,rede+morf,0.7013594829507466,,
+freezer,5min,nativo,cross: eco casa 1,casa,0.5546,0.1916,128,12.5,piso,0.22530076558512574,0.7769668921324314,
+freezer,5min,nativo,cross: eco casa 1,casa,0.5546,0.1916,128,12.5,tudo_ligado,0.7134651958934326,,
+freezer,5min,nativo,cross: eco casa 2,casa,0.5726,0.1916,128,12.5,rede,0.6547314578005116,0.7291223089661698,0.5765546522048974
+freezer,5min,nativo,cross: eco casa 2,casa,0.5726,0.1916,128,12.5,rede+morf,0.6547314578005116,,
+freezer,5min,nativo,cross: eco casa 2,casa,0.5726,0.1916,128,12.5,piso,0.00042176296921130323,0.803450729277837,
+freezer,5min,nativo,cross: eco casa 2,casa,0.5726,0.1916,128,12.5,tudo_ligado,0.7282083018949165,,
+freezer,5min,nativo,intra: refit casa 8,casa,0.2817,0.1966,118,11.8,rede,0.4650455927051672,0.4768127490039841,0.6528868282096402
+freezer,5min,nativo,intra: refit casa 8,casa,0.2817,0.1966,118,11.8,rede+morf,0.46403440187646594,,
+freezer,5min,nativo,intra: refit casa 8,casa,0.2817,0.1966,118,11.8,piso,0.4442655935613682,0.47487321346242506,
+freezer,5min,nativo,intra: refit casa 8,casa,0.2817,0.1966,118,11.8,tudo_ligado,0.4396010519466556,,
+freezer,5min,nativo,cross: eco casa 1,casa,0.5546,0.1966,118,11.8,rede,0.7375482821711731,0.75862688713156,0.7489098525943161
+freezer,5min,nativo,cross: eco casa 1,casa,0.5546,0.1966,118,11.8,rede+morf,0.734508712238375,,
+freezer,5min,nativo,cross: eco casa 1,casa,0.5546,0.1966,118,11.8,piso,0.22530076558512574,0.7769668921324314,
+freezer,5min,nativo,cross: eco casa 1,casa,0.5546,0.1966,118,11.8,tudo_ligado,0.7134651958934326,,
+freezer,5min,nativo,cross: eco casa 2,casa,0.5726,0.1966,118,11.8,rede,0.6954897251134241,0.7311225284135139,0.5739489804718556
+freezer,5min,nativo,cross: eco casa 2,casa,0.5726,0.1966,118,11.8,rede+morf,0.6916038751345532,,
+freezer,5min,nativo,cross: eco casa 2,casa,0.5726,0.1966,118,11.8,piso,0.00042176296921130323,0.803450729277837,
+freezer,5min,nativo,cross: eco casa 2,casa,0.5726,0.1966,118,11.8,tudo_ligado,0.7282083018949165,,
+freezer,15min,media,intra: refit casa 8,casa,0.4373,0.3665,21,2.0,rede,0.6084740363172985,0.6079436258808456,0.5078904655809218
+freezer,15min,media,intra: refit casa 8,casa,0.4373,0.3665,21,2.0,rede+morf,0.6084740363172985,,
+freezer,15min,media,intra: refit casa 8,casa,0.4373,0.3665,21,2.0,piso,0.6088619700350654,0.6098654708520179,
+freezer,15min,media,intra: refit casa 8,casa,0.4373,0.3665,21,2.0,tudo_ligado,0.6084740327237872,,
+freezer,15min,media,cross: eco casa 1,casa,0.7207,0.3665,21,2.0,rede,0.8336503910378356,0.8369152970922883,0.5099760746361799
+freezer,15min,media,cross: eco casa 1,casa,0.7207,0.3665,21,2.0,rede+morf,0.8336503910378356,,
+freezer,15min,media,cross: eco casa 1,casa,0.7207,0.3665,21,2.0,piso,0.8355179704016913,0.8377581120943953,
+freezer,15min,media,cross: eco casa 1,casa,0.7207,0.3665,21,2.0,tudo_ligado,0.8376500242329218,,
+freezer,15min,media,cross: eco casa 2,casa,0.9116,0.3665,21,2.0,rede,0.9326923076923076,0.9531866892272985,0.5181413250302717
+freezer,15min,media,cross: eco casa 2,casa,0.9116,0.3665,21,2.0,rede+morf,0.930635838150289,,
+freezer,15min,media,cross: eco casa 2,casa,0.9116,0.3665,21,2.0,piso,0.9382291069038058,0.9531866892272985,
+freezer,15min,media,cross: eco casa 2,casa,0.9116,0.3665,21,2.0,tudo_ligado,0.9537767599001271,,
+freezer,15min,media,intra: refit casa 8,casa,0.4373,0.1652,35,3.3,rede,0.6080305927342256,0.610875936177141,0.49515760056914276
+freezer,15min,media,intra: refit casa 8,casa,0.4373,0.1652,35,3.3,rede+morf,0.6080305927342256,,
+freezer,15min,media,intra: refit casa 8,casa,0.4373,0.1652,35,3.3,piso,0.6088619700350654,0.6098654708520179,
+freezer,15min,media,intra: refit casa 8,casa,0.4373,0.1652,35,3.3,tudo_ligado,0.6084740327237872,,
+freezer,15min,media,cross: eco casa 1,casa,0.7207,0.1652,35,3.3,rede,0.837650031585597,0.8369152970922883,0.5707496940044434
+freezer,15min,media,cross: eco casa 1,casa,0.7207,0.1652,35,3.3,rede+morf,0.837650031585597,,
+freezer,15min,media,cross: eco casa 1,casa,0.7207,0.1652,35,3.3,piso,0.8355179704016913,0.8377581120943953,
+freezer,15min,media,cross: eco casa 1,casa,0.7207,0.1652,35,3.3,tudo_ligado,0.8376500242329218,,
+freezer,15min,media,cross: eco casa 2,casa,0.9116,0.1652,35,3.3,rede,0.9527573875399964,0.9535626997555932,0.573603182840339
+freezer,15min,media,cross: eco casa 2,casa,0.9116,0.1652,35,3.3,rede+morf,0.9527573875399964,,
+freezer,15min,media,cross: eco casa 2,casa,0.9116,0.1652,35,3.3,piso,0.9382291069038058,0.9531866892272985,
+freezer,15min,media,cross: eco casa 2,casa,0.9116,0.1652,35,3.3,tudo_ligado,0.9537767599001271,,
+freezer,15min,media,intra: refit casa 8,casa,0.4373,0.3633,21,1.9,rede,0.608667941363926,0.6078619367209972,0.4953297066103204
+freezer,15min,media,intra: refit casa 8,casa,0.4373,0.3633,21,1.9,rede+morf,0.608667941363926,,
+freezer,15min,media,intra: refit casa 8,casa,0.4373,0.3633,21,1.9,piso,0.6088619700350654,0.6098654708520179,
+freezer,15min,media,intra: refit casa 8,casa,0.4373,0.3633,21,1.9,tudo_ligado,0.6084740327237872,,
+freezer,15min,media,cross: eco casa 1,casa,0.7207,0.3633,21,1.9,rede,0.835619328972357,0.8369152970922883,0.532196210154553
+freezer,15min,media,cross: eco casa 1,casa,0.7207,0.3633,21,1.9,rede+morf,0.835619328972357,,
+freezer,15min,media,cross: eco casa 1,casa,0.7207,0.3633,21,1.9,piso,0.8355179704016913,0.8377581120943953,
+freezer,15min,media,cross: eco casa 1,casa,0.7207,0.3633,21,1.9,tudo_ligado,0.8376500242329218,,
+freezer,15min,media,cross: eco casa 2,casa,0.9116,0.3633,21,1.9,rede,0.9357868506804677,0.9531866892272985,0.5178506217686292
+freezer,15min,media,cross: eco casa 2,casa,0.9116,0.3633,21,1.9,rede+morf,0.9357868506804677,,
+freezer,15min,media,cross: eco casa 2,casa,0.9116,0.3633,21,1.9,piso,0.9382291069038058,0.9531866892272985,
+freezer,15min,media,cross: eco casa 2,casa,0.9116,0.3633,21,1.9,tudo_ligado,0.9537767599001271,,
+freezer,15min,nativo,intra: refit casa 8,casa,0.2775,0.1004,55,5.1,rede,0.43527054108216434,0.4438603079233947,0.5594937820778275
+freezer,15min,nativo,intra: refit casa 8,casa,0.2775,0.1004,55,5.1,rede+morf,0.43527054108216434,,
+freezer,15min,nativo,intra: refit casa 8,casa,0.2775,0.1004,55,5.1,piso,0.41252796420581656,0.4384672070744289,
+freezer,15min,nativo,intra: refit casa 8,casa,0.2775,0.1004,55,5.1,tudo_ligado,0.4344086001437308,,
+freezer,15min,nativo,cross: eco casa 1,casa,0.554,0.1004,55,5.1,rede,0.7261842790213431,0.7295629820051414,0.6767339691499146
+freezer,15min,nativo,cross: eco casa 1,casa,0.554,0.1004,55,5.1,rede+morf,0.7261842790213431,,
+freezer,15min,nativo,cross: eco casa 1,casa,0.554,0.1004,55,5.1,piso,0.12103407755581669,0.7488917861799218,
+freezer,15min,nativo,cross: eco casa 1,casa,0.554,0.1004,55,5.1,tudo_ligado,0.7129867340842131,,
+freezer,15min,nativo,cross: eco casa 2,casa,0.5726,0.1004,55,5.1,rede,0.698444060261793,0.7282285714285716,0.5315605790622397
+freezer,15min,nativo,cross: eco casa 2,casa,0.5726,0.1004,55,5.1,rede+morf,0.698444060261793,,
+freezer,15min,nativo,cross: eco casa 2,casa,0.5726,0.1004,55,5.1,piso,0.0012539184952978055,0.7327052489905788,
+freezer,15min,nativo,cross: eco casa 2,casa,0.5726,0.1004,55,5.1,tudo_ligado,0.7281863687470663,,
+freezer,15min,nativo,intra: refit casa 8,casa,0.2775,0.173,47,4.3,rede,0.4341821320673285,0.4440093970242756,0.5658466036717741
+freezer,15min,nativo,intra: refit casa 8,casa,0.2775,0.173,47,4.3,rede+morf,0.4341821320673285,,
+freezer,15min,nativo,intra: refit casa 8,casa,0.2775,0.173,47,4.3,piso,0.41252796420581656,0.4384672070744289,
+freezer,15min,nativo,intra: refit casa 8,casa,0.2775,0.173,47,4.3,tudo_ligado,0.4344086001437308,,
+freezer,15min,nativo,cross: eco casa 1,casa,0.554,0.173,47,4.3,rede,0.7174392935982341,0.7300000000000001,0.6834829898432631
+freezer,15min,nativo,cross: eco casa 1,casa,0.554,0.173,47,4.3,rede+morf,0.7174392935982341,,
+freezer,15min,nativo,cross: eco casa 1,casa,0.554,0.173,47,4.3,piso,0.12103407755581669,0.7488917861799218,
+freezer,15min,nativo,cross: eco casa 1,casa,0.554,0.173,47,4.3,tudo_ligado,0.7129867340842131,,
+freezer,15min,nativo,cross: eco casa 2,casa,0.5726,0.173,47,4.3,rede,0.6960914650358948,0.7286857142857143,0.5464024756703183
+freezer,15min,nativo,cross: eco casa 2,casa,0.5726,0.173,47,4.3,rede+morf,0.6960914650358948,,
+freezer,15min,nativo,cross: eco casa 2,casa,0.5726,0.173,47,4.3,piso,0.0012539184952978055,0.7327052489905788,
+freezer,15min,nativo,cross: eco casa 2,casa,0.5726,0.173,47,4.3,tudo_ligado,0.7281863687470663,,
+freezer,15min,nativo,intra: refit casa 8,casa,0.2775,0.1557,47,4.3,rede,0.43322203672787984,0.43731778425655976,0.5541281314443232
+freezer,15min,nativo,intra: refit casa 8,casa,0.2775,0.1557,47,4.3,rede+morf,0.43322203672787984,,
+freezer,15min,nativo,intra: refit casa 8,casa,0.2775,0.1557,47,4.3,piso,0.41252796420581656,0.4384672070744289,
+freezer,15min,nativo,intra: refit casa 8,casa,0.2775,0.1557,47,4.3,tudo_ligado,0.4344086001437308,,
+freezer,15min,nativo,cross: eco casa 1,casa,0.554,0.1557,47,4.3,rede,0.7395411605937922,0.7407806191117092,0.6825872290868288
+freezer,15min,nativo,cross: eco casa 1,casa,0.554,0.1557,47,4.3,rede+morf,0.7395411605937922,,
+freezer,15min,nativo,cross: eco casa 1,casa,0.554,0.1557,47,4.3,piso,0.12103407755581669,0.7488917861799218,
+freezer,15min,nativo,cross: eco casa 1,casa,0.554,0.1557,47,4.3,tudo_ligado,0.7129867340842131,,
+freezer,15min,nativo,cross: eco casa 2,casa,0.5726,0.1557,47,4.3,rede,0.7091230730351276,0.7286857142857143,0.55557025821621
+freezer,15min,nativo,cross: eco casa 2,casa,0.5726,0.1557,47,4.3,rede+morf,0.7091230730351276,,
+freezer,15min,nativo,cross: eco casa 2,casa,0.5726,0.1557,47,4.3,piso,0.0012539184952978055,0.7327052489905788,
+freezer,15min,nativo,cross: eco casa 2,casa,0.5726,0.1557,47,4.3,tudo_ligado,0.7281863687470663,,
+washing machine,5min,media,intra: refit casa 8,casa,0.0406,0.251,58,5.8,rede,0.42524916943521596,0.42524916943521596,0.892050389713135
+washing machine,5min,media,intra: refit casa 8,casa,0.0406,0.251,58,5.8,rede+morf,0.4511627906976744,,
+washing machine,5min,media,intra: refit casa 8,casa,0.0406,0.251,58,5.8,piso,0.33997343957503323,0.3413333333333333,
+washing machine,5min,media,intra: refit casa 8,casa,0.0406,0.251,58,5.8,tudo_ligado,0.07796147623706833,,
+washing machine,5min,media,cross: eco casa 1,casa,0.0672,0.251,58,5.8,rede,0.18013856812933024,0.2924226254002134,0.8086908169001924
+washing machine,5min,media,cross: eco casa 1,casa,0.0672,0.251,58,5.8,rede+morf,0.12521739130434784,,
+washing machine,5min,media,cross: eco casa 1,casa,0.0672,0.251,58,5.8,piso,0.07726597325408618,0.3018032268269535,
+washing machine,5min,media,cross: eco casa 1,casa,0.0672,0.251,58,5.8,tudo_ligado,0.12595862811203193,,
+washing machine,5min,media,intra: refit casa 8,casa,0.0406,0.2358,64,6.5,rede,0.46998284734133794,0.51270207852194,0.9103483767233373
+washing machine,5min,media,intra: refit casa 8,casa,0.0406,0.2358,64,6.5,rede+morf,0.4930232558139535,,
+washing machine,5min,media,intra: refit casa 8,casa,0.0406,0.2358,64,6.5,piso,0.33997343957503323,0.3413333333333333,
+washing machine,5min,media,intra: refit casa 8,casa,0.0406,0.2358,64,6.5,tudo_ligado,0.07796147623706833,,
+washing machine,5min,media,cross: eco casa 1,casa,0.0672,0.2358,64,6.5,rede,0.15922014622258326,0.2916213275299238,0.7973145930608468
+washing machine,5min,media,cross: eco casa 1,casa,0.0672,0.2358,64,6.5,rede+morf,0.19094076655052267,,
+washing machine,5min,media,cross: eco casa 1,casa,0.0672,0.2358,64,6.5,piso,0.07726597325408618,0.3018032268269535,
+washing machine,5min,media,cross: eco casa 1,casa,0.0672,0.2358,64,6.5,tudo_ligado,0.12595862811203193,,
+washing machine,5min,media,intra: refit casa 8,casa,0.0406,0.2229,56,5.5,rede,0.3905325443786982,0.4324324324324324,0.8882086253434833
+washing machine,5min,media,intra: refit casa 8,casa,0.0406,0.2229,56,5.5,rede+morf,0.40060240963855426,,
+washing machine,5min,media,intra: refit casa 8,casa,0.0406,0.2229,56,5.5,piso,0.33997343957503323,0.3413333333333333,
+washing machine,5min,media,intra: refit casa 8,casa,0.0406,0.2229,56,5.5,tudo_ligado,0.07796147623706833,,
+washing machine,5min,media,cross: eco casa 1,casa,0.0672,0.2229,56,5.5,rede,0.16595135908440628,0.257396449704142,0.7752499188113392
+washing machine,5min,media,cross: eco casa 1,casa,0.0672,0.2229,56,5.5,rede+morf,0.16314639475600876,,
+washing machine,5min,media,cross: eco casa 1,casa,0.0672,0.2229,56,5.5,piso,0.07726597325408618,0.3018032268269535,
+washing machine,5min,media,cross: eco casa 1,casa,0.0672,0.2229,56,5.5,tudo_ligado,0.12595862811203193,,
+washing machine,5min,nativo,intra: refit casa 8,casa,0.0376,0.2064,59,5.8,rede,0.4323374340949034,0.4488977955911824,0.8943826464662612
+washing machine,5min,nativo,intra: refit casa 8,casa,0.0376,0.2064,59,5.8,rede+morf,0.47265624999999994,,
+washing machine,5min,nativo,intra: refit casa 8,casa,0.0376,0.2064,59,5.8,piso,0.33967391304347827,0.34131736526946105,
+washing machine,5min,nativo,intra: refit casa 8,casa,0.0376,0.2064,59,5.8,tudo_ligado,0.0724064476927175,,
+washing machine,5min,nativo,cross: eco casa 1,casa,0.0654,0.2064,59,5.8,rede,0.18277680140597538,0.2861480075901328,0.8159334884021875
+washing machine,5min,nativo,cross: eco casa 1,casa,0.0654,0.2064,59,5.8,rede+morf,0.1877076411960133,,
+washing machine,5min,nativo,cross: eco casa 1,casa,0.0654,0.2064,59,5.8,piso,0.07926829268292683,0.29752066115702486,
+washing machine,5min,nativo,cross: eco casa 1,casa,0.0654,0.2064,59,5.8,tudo_ligado,0.12268652637410969,,
+washing machine,5min,nativo,intra: refit casa 8,casa,0.0376,0.2274,64,6.3,rede,0.4624505928853755,0.46492985971943884,0.911105997006871
+washing machine,5min,nativo,intra: refit casa 8,casa,0.0376,0.2274,64,6.3,rede+morf,0.48444444444444446,,
+washing machine,5min,nativo,intra: refit casa 8,casa,0.0376,0.2274,64,6.3,piso,0.33967391304347827,0.34131736526946105,
+washing machine,5min,nativo,intra: refit casa 8,casa,0.0376,0.2274,64,6.3,tudo_ligado,0.0724064476927175,,
+washing machine,5min,nativo,cross: eco casa 1,casa,0.0654,0.2274,64,6.3,rede,0.19039999999999999,0.2949512843224092,0.8131411916266847
+washing machine,5min,nativo,cross: eco casa 1,casa,0.0654,0.2274,64,6.3,rede+morf,0.18950930626057533,,
+washing machine,5min,nativo,cross: eco casa 1,casa,0.0654,0.2274,64,6.3,piso,0.07926829268292683,0.29752066115702486,
+washing machine,5min,nativo,cross: eco casa 1,casa,0.0654,0.2274,64,6.3,tudo_ligado,0.12268652637410969,,
+washing machine,5min,nativo,intra: refit casa 8,casa,0.0376,0.273,58,5.8,rede,0.4475247524752475,0.46121593291404617,0.897900124300294
+washing machine,5min,nativo,intra: refit casa 8,casa,0.0376,0.273,58,5.8,rede+morf,0.45574387947269307,,
+washing machine,5min,nativo,intra: refit casa 8,casa,0.0376,0.273,58,5.8,piso,0.33967391304347827,0.34131736526946105,
+washing machine,5min,nativo,intra: refit casa 8,casa,0.0376,0.273,58,5.8,tudo_ligado,0.0724064476927175,,
+washing machine,5min,nativo,cross: eco casa 1,casa,0.0654,0.273,58,5.8,rede,0.13027522935779817,0.2580645161290323,0.776930457434657
+washing machine,5min,nativo,cross: eco casa 1,casa,0.0654,0.273,58,5.8,rede+morf,0.13184931506849315,,
+washing machine,5min,nativo,cross: eco casa 1,casa,0.0654,0.273,58,5.8,piso,0.07926829268292683,0.29752066115702486,
+washing machine,5min,nativo,cross: eco casa 1,casa,0.0654,0.273,58,5.8,tudo_ligado,0.12268652637410969,,
+washing machine,15min,media,intra: refit casa 8,casa,0.044,0.1664,36,3.4,rede,0.4421052631578947,0.46031746031746035,0.925297333971903
+washing machine,15min,media,intra: refit casa 8,casa,0.044,0.1664,36,3.4,rede+morf,0.44919786096256686,,
+washing machine,15min,media,intra: refit casa 8,casa,0.044,0.1664,36,3.4,piso,0.34254143646408836,0.3843416370106762,
+washing machine,15min,media,intra: refit casa 8,casa,0.044,0.1664,36,3.4,tudo_ligado,0.08421052834416361,,
+washing machine,15min,media,cross: eco casa 1,casa,0.075,0.1664,36,3.4,rede,0.24646464646464644,0.29171817058096416,0.7583651704634692
+washing machine,15min,media,cross: eco casa 1,casa,0.075,0.1664,36,3.4,rede+morf,0.23886639676113358,,
+washing machine,15min,media,cross: eco casa 1,casa,0.075,0.1664,36,3.4,piso,0.12422360248447205,0.3192982456140351,
+washing machine,15min,media,cross: eco casa 1,casa,0.075,0.1664,36,3.4,tudo_ligado,0.1395348888787145,,
+washing machine,15min,media,intra: refit casa 8,casa,0.044,0.1169,46,4.3,rede,0.4052863436123348,0.41860465116279066,0.9038603528097062
+washing machine,15min,media,intra: refit casa 8,casa,0.044,0.1169,46,4.3,rede+morf,0.4083769633507854,,
+washing machine,15min,media,intra: refit casa 8,casa,0.044,0.1169,46,4.3,piso,0.34254143646408836,0.3843416370106762,
+washing machine,15min,media,intra: refit casa 8,casa,0.044,0.1169,46,4.3,tudo_ligado,0.08421052834416361,,
+washing machine,15min,media,cross: eco casa 1,casa,0.075,0.1169,46,4.3,rede,0.2547993019197208,0.297071129707113,0.7678169663046789
+washing machine,15min,media,cross: eco casa 1,casa,0.075,0.1169,46,4.3,rede+morf,0.25414364640883974,,
+washing machine,15min,media,cross: eco casa 1,casa,0.075,0.1169,46,4.3,piso,0.12422360248447205,0.3192982456140351,
+washing machine,15min,media,cross: eco casa 1,casa,0.075,0.1169,46,4.3,tudo_ligado,0.1395348888787145,,
+washing machine,15min,media,intra: refit casa 8,casa,0.044,0.2858,35,3.2,rede,0.43478260869565216,0.44692737430167595,0.9154942927841635
+washing machine,15min,media,intra: refit casa 8,casa,0.044,0.2858,35,3.2,rede+morf,0.4411764705882353,,
+washing machine,15min,media,intra: refit casa 8,casa,0.044,0.2858,35,3.2,piso,0.34254143646408836,0.3843416370106762,
+washing machine,15min,media,intra: refit casa 8,casa,0.044,0.2858,35,3.2,tudo_ligado,0.08421052834416361,,
+washing machine,15min,media,cross: eco casa 1,casa,0.075,0.2858,35,3.2,rede,0.19393939393939394,0.2967032967032967,0.7733101721759567
+washing machine,15min,media,cross: eco casa 1,casa,0.075,0.2858,35,3.2,rede+morf,0.17922606924643586,,
+washing machine,15min,media,cross: eco casa 1,casa,0.075,0.2858,35,3.2,piso,0.12422360248447205,0.3192982456140351,
+washing machine,15min,media,cross: eco casa 1,casa,0.075,0.2858,35,3.2,tudo_ligado,0.1395348888787145,,
+washing machine,15min,nativo,intra: refit casa 8,casa,0.0389,0.1304,35,3.2,rede,0.3897435897435898,0.44720496894409933,0.9344169492475409
+washing machine,15min,nativo,intra: refit casa 8,casa,0.0389,0.1304,35,3.2,rede+morf,0.3804347826086957,,
+washing machine,15min,nativo,intra: refit casa 8,casa,0.0389,0.1304,35,3.2,piso,0.35738831615120276,0.3777777777777778,
+washing machine,15min,nativo,intra: refit casa 8,casa,0.0389,0.1304,35,3.2,tudo_ligado,0.07492287611692032,,
+washing machine,15min,nativo,cross: eco casa 1,casa,0.0645,0.1304,35,3.2,rede,0.23456790123456792,0.2656641604010025,0.771536305799006
+washing machine,15min,nativo,cross: eco casa 1,casa,0.0645,0.1304,35,3.2,rede+morf,0.23225806451612904,,
+washing machine,15min,nativo,cross: eco casa 1,casa,0.0645,0.1304,35,3.2,piso,0.08849557522123894,0.28838174273858924,
+washing machine,15min,nativo,cross: eco casa 1,casa,0.0645,0.1304,35,3.2,tudo_ligado,0.12117086632518255,,
+washing machine,15min,nativo,intra: refit casa 8,casa,0.0389,0.1291,41,3.8,rede,0.4,0.4222222222222222,0.9247092452988819
+washing machine,15min,nativo,intra: refit casa 8,casa,0.0389,0.1291,41,3.8,rede+morf,0.41558441558441556,,
+washing machine,15min,nativo,intra: refit casa 8,casa,0.0389,0.1291,41,3.8,piso,0.35738831615120276,0.3777777777777778,
+washing machine,15min,nativo,intra: refit casa 8,casa,0.0389,0.1291,41,3.8,tudo_ligado,0.07492287611692032,,
+washing machine,15min,nativo,cross: eco casa 1,casa,0.0645,0.1291,41,3.8,rede,0.224,0.26324237560192615,0.7619909659788162
+washing machine,15min,nativo,cross: eco casa 1,casa,0.0645,0.1291,41,3.8,rede+morf,0.19298245614035087,,
+washing machine,15min,nativo,cross: eco casa 1,casa,0.0645,0.1291,41,3.8,piso,0.08849557522123894,0.28838174273858924,
+washing machine,15min,nativo,cross: eco casa 1,casa,0.0645,0.1291,41,3.8,tudo_ligado,0.12117086632518255,,
+washing machine,15min,nativo,intra: refit casa 8,casa,0.0389,0.3433,40,3.7,rede,0.39080459770114945,0.416243654822335,0.9242888770563013
+washing machine,15min,nativo,intra: refit casa 8,casa,0.0389,0.3433,40,3.7,rede+morf,0.40476190476190477,,
+washing machine,15min,nativo,intra: refit casa 8,casa,0.0389,0.3433,40,3.7,piso,0.35738831615120276,0.3777777777777778,
+washing machine,15min,nativo,intra: refit casa 8,casa,0.0389,0.3433,40,3.7,tudo_ligado,0.07492287611692032,,
+washing machine,15min,nativo,cross: eco casa 1,casa,0.0645,0.3433,40,3.7,rede,0.1400560224089636,0.2562874251497006,0.753013516218592
+washing machine,15min,nativo,cross: eco casa 1,casa,0.0645,0.3433,40,3.7,rede+morf,0.1348973607038123,,
+washing machine,15min,nativo,cross: eco casa 1,casa,0.0645,0.3433,40,3.7,piso,0.08849557522123894,0.28838174273858924,
+washing machine,15min,nativo,cross: eco casa 1,casa,0.0645,0.3433,40,3.7,tudo_ligado,0.12117086632518255,,

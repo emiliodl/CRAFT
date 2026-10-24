@@ -1,0 +1,10 @@
+faixa,aparelho,celula,prevalencia_5,trivial_5,artigo_5,auc_5,f1_5,ic95_5,f1_menos_trivial_5,veredito_5,familia_5,p_holm_5,prevalencia_15,trivial_15,artigo_15,auc_15,f1_15,ic95_15,f1_menos_trivial_15,veredito_15,familia_15,p_holm_15
+A+,freezer,cross,0.6534,0.7904,0.78,0.71,0.791,"(0.772, 0.807)",0.001,empate,primaria,0.53,0.8127,0.8967,0.84,0.679,0.899,"(0.883, 0.914)",0.002,supera,primaria,0.0015
+A+,television,cross,0.2094,0.3463,0.54,0.984,0.846,"(0.793, 0.887)",0.5,supera,primaria,0.0015,0.2165,0.356,0.36,0.987,0.905,"(0.867, 0.936)",0.549,supera,primaria,0.0015
+A+,washing machine,cross,0.0737,0.1373,0.3,0.932,0.62,"(0.495, 0.729)",0.483,supera,primaria,0.0015,0.0816,0.151,0.3,0.917,0.45,"(0.317, 0.56)",0.299,supera,primaria,0.03
+A,freezer,cross,0.6534,0.7904,0.78,0.634,0.748,"(0.727, 0.765)",-0.042,perde,secundaria,,0.8127,0.8967,0.84,0.488,0.897,"(0.88, 0.913)",0.0,supera,secundaria,
+A,television,cross,0.2094,0.3463,0.54,0.977,0.693,"(0.613, 0.766)",0.347,supera,secundaria,,0.2165,0.356,0.36,0.969,0.76,"(0.687, 0.824)",0.404,supera,secundaria,
+A,washing machine,cross,0.0737,0.1373,0.3,0.756,0.265,"(0.164, 0.367)",0.128,empate,secundaria,,0.0816,0.151,0.3,0.789,0.271,"(0.165, 0.372)",0.12,empate,secundaria,
+A,freezer,intra,0.33,0.4963,0.46,0.858,0.692,"(0.652, 0.738)",0.196,supera,primaria,0.0015,0.4402,0.6113,0.55,0.703,0.65,"(0.628, 0.675)",0.039,supera,primaria,0.0015
+A,television,intra,0.2391,0.3859,0.68,0.896,0.697,"(0.617, 0.773)",0.311,empate,primaria,0.645,0.2493,0.3991,0.53,0.866,0.671,"(0.596, 0.738)",0.272,supera,primaria,0.0015
+A,washing machine,intra,0.0451,0.0863,0.63,0.995,0.847,"(0.734, 0.919)",0.761,supera,primaria,0.015,0.0481,0.0918,0.35,0.978,0.649,"(0.43, 0.801)",0.557,supera,primaria,0.03

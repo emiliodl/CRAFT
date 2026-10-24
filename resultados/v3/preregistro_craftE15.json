@@ -1,0 +1,127 @@
+{
+ "data": "2026-10-01",
+ "versao": "CRAFT (= CRAFT+E interno) a 15 min, celulas de 15 min do artigo",
+ "status": "APROVADO pelo usuario em 2026-10-01 09:29, antes de qualquer rodada de teste; hash do rascunho 4157a608dbce01ea",
+ "motivacao": "pedido do usuario em 2026-10-01: repetir as mesmas celulas (aparelhos, casas, periodos) do artigo com a reamostragem de 15 min e comparar com 5 min. O pre-registro preregistro_craftE.json (hash 2def81803f358a29) dizia que nao haveria nova rodada; esta e uma rodada NOVA e POSTERIOR ao fechamento, e deve ser declarada assim no artigo",
+ "sementes": 10,
+ "modelo": "o mesmo CRAFT+E do fechamento (5 ResNets G5..G25 com o gerador R0-R4 so BCE + ramo de evidencia A2, media dos logits com peso igual), sem retreinar nada a 5 min e sem reajuste de hiperparametros. Conversao para 15 min (src/taxa.py, NILM_TAXA=900): grade fina de 30 s com 30 caixas por intervalo; tamanhos em amostras convertidos pela MESMA DURACAO (24 h -> 96, 4 h -> 16, D90 e meia-vida do A2 medidos na propria taxa, limites do hiper do A2 divididos por 3); passo 4 -> 1 (faixa A) e 8 -> 3 (A+), que mantem o numero de janelas de treino; kernels (5..25), larguras, epocas, paciencia, lotes e proporcoes do gerador inalterados",
+ "decisoes_na_validacao": {
+  "contexto_do_CRAFT": "resultados/v3/validacao_ctx15__sementes.csv (casas REFIT 3/7/20, faixa A, 3 sementes, so chaves cv): 4 h (16 amostras) AUC 0,762 / F1 d_L 0,603 x 12 h (48) 0,765 / 0,593; criterio fixado antes (diferenca de AUC < 0,01 -> 4 h, a mesma duracao de 5 min) -> ctx = 16",
+  "ramo_E": "val15_ev_A_* (3 sementes): AUC cv TV 0,57, m. lavar 0,85, freezer 0,65 (a 5 min: 0,66 / 0,82 / 0,70); aprendendo, mantido sem ajuste",
+  "fontes": "as mesmas do fechamento: A = REFIT 8; A+ TV = {8, 15} no CRAFT e POOL de TV no E; A+ m. lavar e freezer = POOL do portao G0"
+ },
+ "rotulo": "o do artigo a 15 min: media de 15 min do aparelho >= limiar (TV 10 W, m. lavar 20 W, freezer 10 W), arquivos datasets/protocolo_artigo/*__15min__*.npz ja existentes (REFIT 8 teste e ECO 1/2/5 cross nunca abertos por um modelo; 0 linhas de 15 min em olhadas.csv)",
+ "artigo_15min": {
+  "television|intra": 0.53,
+  "television|cross": 0.36,
+  "washing machine|intra": 0.35,
+  "washing machine|cross": 0.3,
+  "freezer|intra": 0.55,
+  "freezer|cross": 0.84
+ },
+ "regra_primaria": {
+  "cross": "d_L",
+  "intra": "d_A"
+ },
+ "regras_secundarias": [
+  "q (transdutiva)",
+  "d_A no cross (faixa A)",
+  "d_L no intra",
+  "CRAFT sem o E"
+ ],
+ "familia_primaria": [
+  "A+|television|cross",
+  "A+|washing machine|cross",
+  "A+|freezer|cross",
+  "A|television|intra",
+  "A|washing machine|intra",
+  "A|freezer|intra"
+ ],
+ "familia_secundaria": "faixa A cross (TV, m. lavar, freezer); todo o resto e descritivo",
+ "criterio": "o mesmo do fechamento: supera = limite inferior do IC95% (bootstrap de dias ao meio-dia x sementes, 2000 replicas) acima do artigo a 15 min e p_Holm < 0,05 na familia primaria; vence o trivial = IC de F1 - F1(tudo positivo) exclui zero",
+ "comparacao_5_x_15": "descritiva, sem teste: por celula, F1 e AUC do CRAFT a 5 min (final_craftE__celulas.csv) e a 15 min, ao lado do artigo nas duas taxas. O rotulo muda com a taxa (limiar sobre a media reamostrada), entao a prevalencia e o F1 trivial mudam; a AUC e o F1 - trivial sao a comparacao principal entre taxas",
+ "expectativa_declarada": "TV e m. lavar cross A+ superam (artigo 0,36 e 0,30, validacao do CRAFT a 15 min proxima da de 5 min); m. lavar intra supera (artigo 0,35); TV intra provavel supera (artigo cai de 0,68 para 0,53); freezer cross: artigo 0,84 deve estar perto do trivial, provavel empate ou derrota; freezer intra incerto",
+ "execucoes": {
+  "A": {
+   "television": {
+    "tags_craft": [
+     "c15_A_tv"
+    ],
+    "tag_e": "c15_A_ev",
+    "celulas": [
+     "cross",
+     "intra"
+    ]
+   },
+   "washing machine": {
+    "tags_craft": [
+     "c15_A_wm"
+    ],
+    "tag_e": "c15_A_ev",
+    "celulas": [
+     "cross",
+     "intra"
+    ]
+   },
+   "freezer": {
+    "tags_craft": [
+     "c15_A_fz"
+    ],
+    "tag_e": "c15_A_ev",
+    "celulas": [
+     "cross",
+     "intra"
+    ]
+   }
+  },
+  "A+": {
+   "television": {
+    "tags_craft": [
+     "c15_Amais_tv"
+    ],
+    "tag_e": "c15_Amais_ev",
+    "celulas": [
+     "cross"
+    ],
+    "fontes": [
+     8,
+     15
+    ]
+   },
+   "washing machine": {
+    "tags_craft": [
+     "c15_Amais_wm"
+    ],
+    "tag_e": "c15_Amais_ev",
+    "celulas": [
+     "cross"
+    ]
+   },
+   "freezer": {
+    "tags_craft": [
+     "c15_Amais_fz"
+    ],
+    "tag_e": "c15_Amais_ev",
+    "celulas": [
+     "cross"
+    ]
+   }
+  }
+ },
+ "rodadas_novas": [
+  "NILM_TAXA=900 python src/experimento_reco.py --modelos G5,G7,G9,G15,G25 --sementes 10 --epocas 30 --paciencia 5 --lotes_epoca 400 --ctx 16 --olhar_teste --aparelhos television --fonte A --passo 1 --tag c15_A_tv",
+  "NILM_TAXA=900 python src/experimento_reco.py --modelos G5,G7,G9,G15,G25 --sementes 10 --epocas 30 --paciencia 5 --lotes_epoca 400 --ctx 16 --olhar_teste --aparelhos 'washing machine' --fonte A --passo 1 --tag c15_A_wm",
+  "NILM_TAXA=900 python src/experimento_reco.py --modelos G5,G7,G9,G15,G25 --sementes 10 --epocas 30 --paciencia 5 --lotes_epoca 400 --ctx 16 --olhar_teste --aparelhos freezer --fonte A --passo 1 --tag c15_A_fz",
+  "NILM_TAXA=900 python src/experimento_reco.py --modelos G5,G7,G9,G15,G25 --sementes 10 --epocas 30 --paciencia 5 --lotes_epoca 400 --ctx 16 --olhar_teste --aparelhos television --fonte A+ --casas_extra 15 --passo 3 --tag c15_Amais_tv",
+  "NILM_TAXA=900 python src/experimento_reco.py --modelos G5,G7,G9,G15,G25 --sementes 10 --epocas 30 --paciencia 5 --lotes_epoca 400 --ctx 16 --olhar_teste --aparelhos 'washing machine' --fonte A+ --passo 3 --tag c15_Amais_wm",
+  "NILM_TAXA=900 python src/experimento_reco.py --modelos G5,G7,G9,G15,G25 --sementes 10 --epocas 30 --paciencia 5 --lotes_epoca 400 --ctx 16 --olhar_teste --aparelhos freezer --fonte A+ --passo 3 --tag c15_Amais_fz",
+  "NILM_TAXA=900 python src/experimento_evicon.py --modelos A2 --casas_extra auto --n_extra 99 --sementes 10 --epocas 40 --paciencia 6 --olhar_teste --aparelhos <cada um dos 3> --fonte A --passo 1 --tag c15_A_ev",
+  "NILM_TAXA=900 python src/experimento_evicon.py --modelos A2 --casas_extra auto --n_extra 99 --sementes 10 --epocas 40 --paciencia 6 --olhar_teste --aparelhos <cada um dos 3> --fonte A+ --passo 3 --tag c15_Amais_ev",
+  "NILM_TAXA=900 python src/final_craftE.py --preregistro resultados/v3/preregistro_craftE15.json"
+ ],
+ "olhadas_no_teste_antes": "33 linhas em resultados/v2/olhadas.csv (26 do ECO/casa 8 a 5 min + 7 do UK-DALE); 0 a 15 min",
+ "olhadas_previstas": "12 linhas automaticas (6 do CRAFT + 6 do E, uma por aparelho x faixa) + 1 da analise final = 13; total do projeto 46. Rodada unica: nenhuma mudanca de modelo ou regra depois dela",
+ "aviso": "o teste a 15 min usa as MESMAS casas e meses ja olhados 26 vezes a 5 min; nao e um conjunto novo e independente. O modelo foi desenhado com essas olhadas a 5 min; a 15 min so o contexto (validacao) foi decidido",
+ "execucao": "processos em paralelo na GPU, um por linha de rodadas_novas (o E dividido por aparelho)",
+ "hash": "c6afccfc583788e6"
+}
